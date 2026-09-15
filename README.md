@@ -1,6 +1,6 @@
 # Lung Segmentation with Deep Learning
 
-**Event:** Chest MRI School — September 2026, Aberdeen  
+**Event:** Chest MRI School - September 2026, Aberdeen  
 **Author:** Nathalie Barrau  
 **Notebook:** `TP_lung_segmentation.ipynb`
 
@@ -25,7 +25,7 @@ By the end of the lab, participants will have practical experience with three ma
 - Download the SAM ViT-B checkpoint
 - Configure GPU/CPU device and reproducibility seed
 
-### 1. Dataset — COVID-19 CT Seg
+### 1. Dataset - COVID-19 CT Seg
 - Download 9 chest CT volumes and lung masks from the [COVID-19 CT Lung and Infection Segmentation Dataset](https://zenodo.org/records/3757476) (Ma et al.)
 - Apply lung windowing (`[-1000, 400] HU`) and intensity normalization
 - Extract, filter, and resize 2D axial slices to `256 x 256`
@@ -38,7 +38,7 @@ By the end of the lab, participants will have practical experience with three ma
 - Convergence analysis, quantitative Dice evaluation, and qualitative visualization
 - Brief overview of **nnU-Net** as a self-configuring pipeline
 
-### 3. SAM — Promptable foundation model
+### 3. SAM - Promptable foundation model
 - Introduction to the SAM architecture (ViT encoder + prompt encoder + mask decoder)
 - **Bounding-box prompt** segmentation on 2D slices
 - **Interactive click-based** point prompts (positive/negative)
@@ -46,7 +46,7 @@ By the end of the lab, participants will have practical experience with three ma
 - **3D volume segmentation** via slice-by-slice box propagation
 - Discussion of medical adaptations: **MedSAM** and **MedSAM2**
 
-### 4. DINOv2 — Foundation-model representations
+### 4. DINOv2 - Foundation-model representations
 - Introduction to self-supervised Vision Transformers
 - Use of the frozen DINOv2 ViT backbone as a feature extractor
 - Training a lightweight decoder head on top of DINOv2 patch embeddings
